@@ -1,4 +1,4 @@
-# test-app
+# twoshi-toram-app
 
 ## Build Setup
 
