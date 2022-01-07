@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - twoshi-toram-app',
-    title: 'twoshi-toram-app',
+    titleTemplate: '%s',
+    title: 'ある冒険者の雑記帳',
     htmlAttrs: {
       lang: 'jp',
     },
@@ -53,11 +53,11 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
-        dark: {
+        light: {
           primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
+          accent: colors.green.accent3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
@@ -73,5 +73,9 @@ export default {
 
   generate: {
     dir: 'docs'
+  },
+
+  server: {
+    host: '0' // デフォルト: localhost
   }
 }
