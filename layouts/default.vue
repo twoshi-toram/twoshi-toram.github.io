@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar dark fixed app color="indigo darken-3">
-      <v-app-bar-nav-icon @click="drawer = !drawer"/>
+      <v-app-bar-nav-icon />
       <v-toolbar-title class="font-weight-black" v-text="title" />
     </v-app-bar>
     <v-navigation-drawer
