@@ -1,5 +1,5 @@
 <template>
-  <v-container class="background">
+  <v-container class="content">
     <v-row>
       <h1>
       ある冒険者の雑記帳へようこそ！
@@ -82,6 +82,10 @@ export default {
 </script>
 
 <style scoped>
+.content {
+  max-width: 1200px;
+}
+
 a {
   text-decoration: none;
 }
