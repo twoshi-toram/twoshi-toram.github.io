@@ -2,17 +2,11 @@
   <v-container class="content">
     <v-row>
       <h1>
-      ある冒険者の雑記帳へようこそ！
+        ある冒険者の雑記帳へようこそ！
       </h1>
     </v-row>
-    <v-row>
-      <h2 id="このサイトについて">
-        <span>このサイトについて</span>
-      </h2>
-    </v-row>
-    <v-row>
+    <SubContent title="このサイトについて">
       <p>
-        私(トゥーシ)が
         <a
           href="http://toram.jp/"
           target="_blank"
@@ -23,7 +17,7 @@
             <v-icon>mdi-checkbox-multiple-blank-outline</v-icon>
           </span>
         </a>
-        を冒険するにあたり学んだことを雑記した内容を公開しているサイトです。<br>
+        を冒険するにあたり学んだことを公開しているサイトです。<br>
         記載した内容が少しでも多くの冒険者の方の参考になれば幸いです。
       </p>
       <p>
@@ -60,18 +54,13 @@
         </a> -->
         まで、そっとお教えいただけるとありがたいです。
       </p>
-    </v-row>
-    <v-row>
-      <h2 id="サイトの更新について">
-        <span>サイトの更新について</span>
-      </h2>
-    </v-row>
-    <v-row>
+    </SubContent>
+    <SubContent title="サイトの更新について">
       <p>
         サイトの更新については<strong>不定期</strong>です。<br>
         少しずつ情報を増やしていきたいと考えていますので、お待ちいただければと思います。
       </p>
-    </v-row>
+    </SubContent>
   </v-container>
 </template>
 
@@ -81,7 +70,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .content {
   max-width: 1200px;
 }
@@ -96,6 +85,4 @@ h2 {
   border-bottom: 1px solid #999;
   width: 100%
 }
-
-
 </style>
