@@ -1,5 +1,6 @@
 <template>
   <v-container class="content">
+    ビギナー
   </v-container>
 </template>
 
