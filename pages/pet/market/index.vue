@@ -139,7 +139,7 @@ export default {
   },
   created() {
     this.loading = true;
-    axios.get("https://script.google.com/macros/s/AKfycbzCLK58S1yXkBCd-jSLV7qqhovtmy6hxBNDSKDOzIwSbz8QvBQgkdIZUxuFsKygmYNZAg/exec")
+    axios.get("https://script.google.com/macros/s/AKfycbwfBR9ENyWoqZBEwFjvcGNZmmudEvekLR-BMErOxeA8EkpUh9uvu_2Jd2_L2zhzYbcIOA/exec")
     .then(res => {
       this.rawPetList = res.data;
     })
