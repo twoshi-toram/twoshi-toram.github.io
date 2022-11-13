@@ -55,9 +55,9 @@ export default {
           path: '/',
         },
         {
-          icon: '',
-          title: '初心者ガイド',
-          path: '/beginner',
+          icon: 'mdi-cat',
+          title: 'ペット市場',
+          path: '/pet/market',
         },
       ],
     }

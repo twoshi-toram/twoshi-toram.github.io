@@ -2,7 +2,7 @@
   <v-container class="content">
     <v-row>
       <h1>
-        ある冒険者の雑記帳へようこそ！
+        「ある冒険者の雑記帳」へようこそ！
       </h1>
     </v-row>
     <SubContent title="このサイトについて">
@@ -17,7 +17,7 @@
             <v-icon>mdi-checkbox-multiple-blank-outline</v-icon>
           </span>
         </a>
-        を冒険するにあたり学んだことを公開しているサイトです。<br>
+        を冒険するにあたって役に立つかもしれない情報を公開しているサイトです。<br>
         記載した内容が少しでも多くの冒険者の方の参考になれば幸いです。
       </p>
       <p>
@@ -47,14 +47,14 @@
       </p>
     </SubContent>
 
-    <SubContent title="このサイトについて">
+    <!-- <SubContent title="このサイトについて">
       
     </SubContent>
     <div v-html="test"></div>
 
     <div>
       <img src="https://dl.dropboxusercontent.com/s/i4s18u3keiqj4p1/%E5%86%99%E7%9C%9F%202022-02-11%208%2003%2030.jpg" />
-    </div>
+    </div> -->
   </v-container>
 </template>
 
