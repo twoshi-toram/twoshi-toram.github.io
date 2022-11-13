@@ -1,12 +1,12 @@
 <template>
   <v-container class="content">
-    ビギナー
+    ペットについて
   </v-container>
 </template>
 
 <script>
 export default {
-  name: 'BeginnerPage',
+  name: 'petIndexPage',
 }
 </script>
 

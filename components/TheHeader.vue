@@ -23,6 +23,7 @@
         <v-list-item
           v-for="(menu, index) in menus"
           :key="`menu-${index}`"
+          @click="$router.push(menu.path)"
         >
           <v-list-item-icon class="mr-3">
             <v-icon v-text="menu.icon"></v-icon>
@@ -49,14 +50,14 @@ export default {
       drawer: false,
       menus: [
         {
-          icon: '',
+          icon: 'mdi-shield-sword-outline',
           title: 'はじめに',
-          items: [],
+          path: '/',
         },
         {
-          icon: '',
-          title: '初心者ガイド',
-          items: [],
+          icon: 'mdi-cat',
+          title: 'ペット市場',
+          path: '/pet/market',
         },
       ],
     }

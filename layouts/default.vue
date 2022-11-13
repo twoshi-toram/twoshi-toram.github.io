@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style scoped>
+html {
+  color: #273849;
+}
 .main {
   background-image: url("~assets/img/sofia.png");
   background-color: rgba(255, 255, 255, 0.8);
