@@ -34,6 +34,11 @@
                   <span class="text-caption">スピナ</span>
               </v-col>
           </v-row>
+          <v-row>
+            <v-col class="py-0 text-caption text-color-red text-center">
+              ※ 掲載している金額はあくまで参考額です。販売する前に実際のマーケットをご覧ください。
+            </v-col>
+          </v-row>
         </v-card>
       </v-col>
     </v-row>
@@ -87,6 +92,16 @@
                 clearable
               ></v-select>
             </v-col>
+            <v-col>
+              <v-select
+                v-model="achievement"
+                :items="achievementList"
+                menu-props="auto"
+                hide-details
+                label="販売実績"
+                clearable
+              ></v-select>
+            </v-col>
           </v-row>
         </v-card>
       </v-col>
@@ -121,6 +136,7 @@ export default {
         { text: "性格", value: "character", width: "3%" },
         { text: "出品先", value: "listing_target", width: "3%" },
         { text: "販売額(スピナ)", value: "price", width: "10%" },
+        { text: "取引実績", value: "achievement", width: "5%" },
         { text: "登録日", value: "created_date", width: "5%"  }
       ],
       rawPetList: [],
@@ -134,7 +150,9 @@ export default {
       type: "",
       typeList: ["天才", "器用貧乏", "物理攻撃", "物理防御", "命中", "回避", "魔法攻撃", "魔法防御", "スキル強化", "平凡"],
       listingTarget: "",
-      listingTargetList: ["国内", "国際"]
+      listingTargetList: ["国内", "国際"],
+      achievement: "",
+      achievementList: ["販売成立", "販売希望"]
     }
   },
   created() {
@@ -153,7 +171,8 @@ export default {
         && (!this.weapon || (this.weapon && pet.weapon === this.weapon))
         && (!this.type || (this.type && pet.type === this.type))
         && (!this.character || (this.character && pet.character === this.character))
-        && (!this.listingTarget || (this.listingTarget && pet.listing_target === this.listingTarget)));
+        && (!this.listingTarget || (this.listingTarget && pet.listing_target === this.listingTarget))
+        && (!this.achievement || (this.achievement && pet.achievement === this.achievement)));
     },
     priceList() {
       return this.petList.map(pet => pet.price);
@@ -178,5 +197,8 @@ export default {
 <style scoped>
 .content {
   max-width: 1200px;
+}
+.text-color-red {
+  color: #D50000;
 }
 </style>
