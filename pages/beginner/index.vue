@@ -1,6 +1,6 @@
 <template>
   <v-container class="content">
-    ビギナー
+    初心者ガイド
   </v-container>
 </template>
 
